@@ -1,0 +1,87 @@
+JFDML JFormDesigner: "5.2.1.0.138" Java: "1.8.0_31" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": "Login"
+			"$sizePolicy": 1
+			"$locationPolicy": 1
+			"resizable": false
+			"visible": true
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtName"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 56
+				"y": 50
+				"width": 166
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelName"
+				"text": "Name: "
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 113
+				"y": 30
+				"width": 47
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtAddress"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 56
+				"y": 120
+				"width": 166
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelipAddress"
+				"text": "IP Address"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 110
+				"y": 100
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtPort"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 166
+				"height": 24
+				"x": 55
+				"y": 200
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelPort"
+				"text": "Port:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 40
+				"height": 16
+				"x": 120
+				"y": 180
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelIPeg"
+				"text": "(eg. 192.168.0.2)"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 95
+				"y": 145
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelPorteg"
+				"text": "(eg. 8192)"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 110
+				"y": 225
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonLogin"
+				"text": "Login"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonLoginActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 105
+				"y": 300
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 300, 380 )
+		} )
+	}
+}
